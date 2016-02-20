@@ -1,0 +1,142 @@
+> summary(pruned_model4)
+Call:
+rpart(formula = Class ~ ., data = train_data, method = "class", 
+    parms = list(split = "information"), minsplit = 2, minbucket = 1)
+  n= 600 
+
+          CP nsplit rel error    xerror       xstd
+1 0.17000000      0 1.0000000 1.0933333 0.04064663
+2 0.07666667      1 0.8300000 0.8866667 0.04056180
+3 0.03666667      2 0.7533333 0.8633333 0.04044177
+4 0.03000000      3 0.7166667 0.8100000 0.04008117
+5 0.02666667      5 0.6566667 0.7966667 0.03997198
+6 0.02000000      6 0.6300000 0.7633333 0.03966503
+
+Variable importance
+XM XI XO XB XD XC XK XQ XF XU XS 
+39 24 12  8  5  4  3  2  1  1  1 
+
+Node number 1: 600 observations,    complexity param=0.17
+  predicted class=0  expected loss=0.5  P(node) =1
+    class counts:   300   300
+   probabilities: 0.500 0.500 
+  left son=2 (277 obs) right son=3 (323 obs)
+  Primary splits:
+      XO < 0.5 to the left,  improve=8.765052, (0 missing)
+      XI < 0.5 to the left,  improve=6.621767, (0 missing)
+      XM < 0.5 to the left,  improve=3.450181, (0 missing)
+      XT < 0.5 to the right, improve=3.445968, (0 missing)
+      XR < 0.5 to the right, improve=2.906185, (0 missing)
+  Surrogate splits:
+      XB < 0.5 to the left,  agree=0.580, adj=0.090, (0 split)
+      XQ < 0.5 to the right, agree=0.570, adj=0.069, (0 split)
+      XK < 0.5 to the right, agree=0.562, adj=0.051, (0 split)
+      XR < 0.5 to the right, agree=0.557, adj=0.040, (0 split)
+      XS < 0.5 to the right, agree=0.550, adj=0.025, (0 split)
+
+Node number 2: 277 observations,    complexity param=0.07666667
+  predicted class=0  expected loss=0.4079422  P(node) =0.4616667
+    class counts:   164   113
+   probabilities: 0.592 0.408 
+  left son=4 (110 obs) right son=5 (167 obs)
+  Primary splits:
+      XM < 0.5 to the left,  improve=24.091630, (0 missing)
+      XB < 0.5 to the right, improve= 8.254417, (0 missing)
+      XU < 0.5 to the right, improve= 3.290161, (0 missing)
+      XC < 0.5 to the right, improve= 2.929390, (0 missing)
+      XR < 0.5 to the right, improve= 2.040493, (0 missing)
+
+Node number 3: 323 observations,    complexity param=0.03
+  predicted class=1  expected loss=0.4210526  P(node) =0.5383333
+    class counts:   136   187
+   probabilities: 0.421 0.579 
+  left son=6 (127 obs) right son=7 (196 obs)
+  Primary splits:
+      XI < 0.5 to the left,  improve=4.167797, (0 missing)
+      XP < 0.5 to the left,  improve=4.049487, (0 missing)
+      XH < 0.5 to the left,  improve=3.158317, (0 missing)
+      XQ < 0.5 to the right, improve=2.869811, (0 missing)
+      XT < 0.5 to the right, improve=2.540544, (0 missing)
+  Surrogate splits:
+      XQ < 0.5 to the right, agree=0.641, adj=0.087, (0 split)
+
+Node number 4: 110 observations
+  predicted class=0  expected loss=0.1636364  P(node) =0.1833333
+    class counts:    92    18
+   probabilities: 0.836 0.164 
+
+Node number 5: 167 observations,    complexity param=0.03666667
+  predicted class=1  expected loss=0.4311377  P(node) =0.2783333
+    class counts:    72    95
+   probabilities: 0.431 0.569 
+  left son=10 (53 obs) right son=11 (114 obs)
+  Primary splits:
+      XB < 0.5 to the right, improve=4.709122, (0 missing)
+      XF < 0.5 to the left,  improve=3.266458, (0 missing)
+      XU < 0.5 to the right, improve=2.459097, (0 missing)
+      XR < 0.5 to the right, improve=1.562018, (0 missing)
+      XS < 0.5 to the right, improve=1.561809, (0 missing)
+
+Node number 6: 127 observations,    complexity param=0.03
+  predicted class=0  expected loss=0.480315  P(node) =0.2116667
+    class counts:    66    61
+   probabilities: 0.520 0.480 
+  left son=12 (58 obs) right son=13 (69 obs)
+  Primary splits:
+      XM < 0.5 to the right, improve=3.973298, (0 missing)
+      XF < 0.5 to the right, improve=3.017889, (0 missing)
+      XH < 0.5 to the left,  improve=2.123747, (0 missing)
+      XN < 0.5 to the right, improve=1.582212, (0 missing)
+      XP < 0.5 to the left,  improve=1.259293, (0 missing)
+  Surrogate splits:
+      XQ < 0.5 to the left,  agree=0.630, adj=0.190, (0 split)
+      XF < 0.5 to the left,  agree=0.614, adj=0.155, (0 split)
+      XU < 0.5 to the right, agree=0.606, adj=0.138, (0 split)
+      XS < 0.5 to the right, agree=0.575, adj=0.069, (0 split)
+      XD < 0.5 to the right, agree=0.567, adj=0.052, (0 split)
+
+Node number 7: 196 observations
+  predicted class=1  expected loss=0.3571429  P(node) =0.3266667
+    class counts:    70   126
+   probabilities: 0.357 0.643 
+
+Node number 10: 53 observations,    complexity param=0.02666667
+  predicted class=0  expected loss=0.3962264  P(node) =0.08833333
+    class counts:    32    21
+   probabilities: 0.604 0.396 
+  left son=20 (19 obs) right son=21 (34 obs)
+  Primary splits:
+      XI < 0.5 to the left,  improve=12.970010, (0 missing)
+      XC < 0.5 to the right, improve=10.279380, (0 missing)
+      XD < 0.5 to the left,  improve= 9.458275, (0 missing)
+      XK < 0.5 to the right, improve= 9.458275, (0 missing)
+      XP < 0.5 to the right, improve= 4.213424, (0 missing)
+  Surrogate splits:
+      XD < 0.5 to the left,  agree=0.736, adj=0.263, (0 split)
+      XC < 0.5 to the right, agree=0.717, adj=0.211, (0 split)
+      XK < 0.5 to the right, agree=0.698, adj=0.158, (0 split)
+
+Node number 11: 114 observations
+  predicted class=1  expected loss=0.3508772  P(node) =0.19
+    class counts:    40    74
+   probabilities: 0.351 0.649 
+
+Node number 12: 58 observations
+  predicted class=0  expected loss=0.3448276  P(node) =0.09666667
+    class counts:    38    20
+   probabilities: 0.655 0.345 
+
+Node number 13: 69 observations
+  predicted class=1  expected loss=0.4057971  P(node) =0.115
+    class counts:    28    41
+   probabilities: 0.406 0.594 
+
+Node number 20: 19 observations
+  predicted class=0  expected loss=0  P(node) =0.03166667
+    class counts:    19     0
+   probabilities: 1.000 0.000 
+
+Node number 21: 34 observations
+  predicted class=1  expected loss=0.3823529  P(node) =0.05666667
+    class counts:    13    21
+   probabilities: 0.382 0.618 

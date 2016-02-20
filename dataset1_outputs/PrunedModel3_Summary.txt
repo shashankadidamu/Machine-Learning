@@ -1,0 +1,59 @@
+> summary(pruned_model3)
+Call:
+rpart(formula = Class ~ ., data = train_data, method = "class", 
+    parms = list(split = "information"), minsplit = 2, minbucket = 1)
+  n= 600 
+
+          CP nsplit rel error    xerror       xstd
+1 0.17000000      0 1.0000000 1.0933333 0.04064663
+2 0.07666667      1 0.8300000 0.8866667 0.04056180
+3 0.03909091      2 0.7533333 0.8633333 0.04044177
+
+Variable importance
+XM XO XB XQ XK XR XS 
+68 25  2  2  1  1  1 
+
+Node number 1: 600 observations,    complexity param=0.17
+  predicted class=0  expected loss=0.5  P(node) =1
+    class counts:   300   300
+   probabilities: 0.500 0.500 
+  left son=2 (277 obs) right son=3 (323 obs)
+  Primary splits:
+      XO < 0.5 to the left,  improve=8.765052, (0 missing)
+      XI < 0.5 to the left,  improve=6.621767, (0 missing)
+      XM < 0.5 to the left,  improve=3.450181, (0 missing)
+      XT < 0.5 to the right, improve=3.445968, (0 missing)
+      XR < 0.5 to the right, improve=2.906185, (0 missing)
+  Surrogate splits:
+      XB < 0.5 to the left,  agree=0.580, adj=0.090, (0 split)
+      XQ < 0.5 to the right, agree=0.570, adj=0.069, (0 split)
+      XK < 0.5 to the right, agree=0.562, adj=0.051, (0 split)
+      XR < 0.5 to the right, agree=0.557, adj=0.040, (0 split)
+      XS < 0.5 to the right, agree=0.550, adj=0.025, (0 split)
+
+Node number 2: 277 observations,    complexity param=0.07666667
+  predicted class=0  expected loss=0.4079422  P(node) =0.4616667
+    class counts:   164   113
+   probabilities: 0.592 0.408 
+  left son=4 (110 obs) right son=5 (167 obs)
+  Primary splits:
+      XM < 0.5 to the left,  improve=24.091630, (0 missing)
+      XB < 0.5 to the right, improve= 8.254417, (0 missing)
+      XU < 0.5 to the right, improve= 3.290161, (0 missing)
+      XC < 0.5 to the right, improve= 2.929390, (0 missing)
+      XR < 0.5 to the right, improve= 2.040493, (0 missing)
+
+Node number 3: 323 observations
+  predicted class=1  expected loss=0.4210526  P(node) =0.5383333
+    class counts:   136   187
+   probabilities: 0.421 0.579 
+
+Node number 4: 110 observations
+  predicted class=0  expected loss=0.1636364  P(node) =0.1833333
+    class counts:    92    18
+   probabilities: 0.836 0.164 
+
+Node number 5: 167 observations
+  predicted class=1  expected loss=0.4311377  P(node) =0.2783333
+    class counts:    72    95
+   probabilities: 0.431 0.569 

@@ -1,0 +1,25 @@
+> printcp(model)
+
+Classification tree:
+rpart(formula = Class ~ ., data = train_data, method = "class", 
+    parms = list(split = "information"), minsplit = 2, minbucket = 1)
+
+Variables actually used in tree construction:
+ [1] XB XC XD XF XG XH XI XM XO XP XQ XS XT
+
+Root node error: 300/600 = 0.5
+
+n= 600 
+
+         CP nsplit rel error  xerror     xstd
+1  0.170000      0   1.00000 1.09333 0.040647
+2  0.076667      1   0.83000 0.88667 0.040562
+3  0.036667      2   0.75333 0.86333 0.040442
+4  0.030000      3   0.71667 0.81000 0.040081
+5  0.026667      5   0.65667 0.79667 0.039972
+6  0.020000      6   0.63000 0.76333 0.039665
+7  0.018333     10   0.55000 0.73333 0.039347
+8  0.016667     12   0.51333 0.68333 0.038724
+9  0.013333     14   0.48000 0.68000 0.038678
+10 0.011667     16   0.45333 0.65000 0.038243
+11 0.010000     20   0.40667 0.62000 0.037762
