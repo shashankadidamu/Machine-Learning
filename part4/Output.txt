@@ -1,0 +1,8 @@
+The output obtained after running pima_q4_knn.R Script :
+
+k : Average Accuracy
+3 : 66.75325 
+5 : 70 
+7 : 71.21212 
+9 : 71.72078 
+11 : 71.76623 

@@ -1,0 +1,49 @@
+
+1. Variable 1: No_of_times_Pregnant
+From the distribution(pdfs-var1_histogram,var1_barplot) we can say that the distribution is most likely right-skewed.
+ 
+   	Variable 2: Plasma glucose concentration
+From the distribution(pdfs-var2_histogram,var2_barplot) we can say that the distribution is normal.
+
+   	Variable 3: Diastolic blood pressure
+From the distribution(pdfs-var3_histogram,var3_barplot) we can say that the distribution is mostly normal except for a few values.
+
+	Variable 4: Triceps skin fold thickness
+From the distribution(pdfs-var4_histogram,var4_barplot) we can say that the distribution is not normal
+
+	Variable 5: 2-Hour serum insulin
+From the distribution(pdfs-var5_histogram,var5_barplot) we can say that the distribution is not normal . It is most likely right-skewed.
+
+	Variable 6: Body mass index
+From the distribution(pdfs-var6_histogram,var6_barplot) we can say that the distribution is normal.
+
+	Variable 7: Diabetes pedigree function
+From the distribution(pdfs-var7_histogram,var7_barplot) we can say that the distribution is not-normal.(right-skewed)
+
+	Variable 8: Age
+From the distribution(pdfs-var8_histogram,var8_barplot) we can say that the distribution is not-normal(right-skewed).
+
+2.                    Class
+No_of_times_pregnant 0.2218982
+               Class
+Plasma_glucose 0.4665814
+      Class
+D_bp 0.06506836
+         Class
+Triceps 0.07475223
+          Class
+Insulin 0.130548
+       Class
+BMI 0.2926947
+       Class
+D_pf 0.1738441
+       Class
+Age 0.238356
+
+From the above results we can say that, the attribute Plasma glucose concentration(2nd attribute) has a strong correlation with output(class) variable.
+
+3. 
+                          Age
+No_of_times_pregnant 0.5443412
+
+The attributes Age and No_of_times_Pregnant have high mutual correlation.

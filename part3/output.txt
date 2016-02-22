@@ -1,0 +1,19 @@
+The output obtained after running pima_q3_svm.R Script :
+
+1 : 80.51948 
+2 : 77.92208 
+3 : 72.72727 
+4 : 84.41558 
+5 : 85.71429 
+6 : 74.02597 
+7 : 77.92208 
+8 : 79.22078 
+9 : 79.22078 
+10 : 74.02597 
+
+Overall Average 78.57143
+
+Linear Average Accuracy 77.85714 
+Polynomial Average Accuracy 77.09957 
+Radial Average Accuracy 76.52597 
+Sigmoid Average Accuracy 76.33766 
